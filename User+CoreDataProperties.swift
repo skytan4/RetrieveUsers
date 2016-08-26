@@ -18,6 +18,6 @@ extension User {
     @NSManaged var lastName: String?
     @NSManaged var phoneNumber: String?
     @NSManaged var email: String?
-    @NSManaged var thumbnailUrlString: String?
+    @NSManaged var thumbnailData: NSData?
 
 }

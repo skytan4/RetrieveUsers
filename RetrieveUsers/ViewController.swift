@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         addDoneButtonOnKeyboard()
-        tableView.addSubview(self.refreshControl)
+        tableView.addSubview(refreshControl)
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,7 +58,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func addDoneButtonOnKeyboard() {
-        let doneToolbar = UIToolbar(frame: CGRectMake(0, 0, 320, 50))
+        let doneToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 50))
         doneToolbar.barStyle = .BlackTranslucent
         
         let flexSpace = UIBarButtonItem(barButtonSystemItem: .FlexibleSpace, target: nil, action: nil)
@@ -104,11 +104,10 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         }
         cell.emailLabel.text = user.email
         cell.phoneLabel.text = user.phoneNumber
-        if let userThumbnailUrlString = user.thumbnailUrlString, userThumbnailUrl = NSURL(string: userThumbnailUrlString), imageData = NSData(contentsOfURL: userThumbnailUrl) {
-            cell.thumbnailImageView.image = UIImage(data: imageData)
+        if let thumbnailData = user.thumbnailData {
+            cell.thumbnailImageView.image = UIImage(data: thumbnailData)
         }
         
         return cell
     }
 }
-
