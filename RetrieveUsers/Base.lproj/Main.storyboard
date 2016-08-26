@@ -9,7 +9,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RetrieveUsers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -43,12 +42,6 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JFv-j7-T43">
-                                                    <rect key="frame" x="1" y="0.0" width="100" height="88"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="eF3-x3-o3i"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guP-Yp-Amz">
                                                     <rect key="frame" x="171" y="0.0" width="45" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -73,13 +66,19 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JFv-j7-T43">
+                                                    <rect key="frame" x="0.0" y="4" width="100" height="88"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="eF3-x3-o3i"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Skn-5B-LqF" firstAttribute="top" secondItem="dtC-cI-uqf" secondAttribute="bottom" constant="8" symbolic="YES" id="1aN-wb-v2z"/>
-                                                <constraint firstItem="JFv-j7-T43" firstAttribute="top" secondItem="F83-d3-yVf" secondAttribute="top" id="1ry-Il-GLU"/>
+                                                <constraint firstItem="JFv-j7-T43" firstAttribute="top" secondItem="F83-d3-yVf" secondAttribute="top" constant="4" id="1ry-Il-GLU"/>
                                                 <constraint firstItem="Skn-5B-LqF" firstAttribute="baseline" secondItem="qK4-JP-94J" secondAttribute="baseline" id="5X2-50-u8O"/>
                                                 <constraint firstItem="Skn-5B-LqF" firstAttribute="leading" secondItem="bxu-Qx-naR" secondAttribute="leading" id="Ml1-vy-Hhi"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="JFv-j7-T43" secondAttribute="bottom" constant="-0.5" id="RcY-IP-pfC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="JFv-j7-T43" secondAttribute="bottom" constant="-4.5" id="RcY-IP-pfC"/>
                                                 <constraint firstItem="dtC-cI-uqf" firstAttribute="baseline" secondItem="guP-Yp-Amz" secondAttribute="baseline" id="UOl-xE-VGZ"/>
                                                 <constraint firstItem="qK4-JP-94J" firstAttribute="leading" secondItem="Skn-5B-LqF" secondAttribute="trailing" constant="9" id="ZeN-3h-akF"/>
                                                 <constraint firstItem="bxu-Qx-naR" firstAttribute="baseline" secondItem="vCl-3c-wSs" secondAttribute="baseline" id="ZlO-w0-47Q"/>
@@ -87,7 +86,7 @@
                                                 <constraint firstItem="dtC-cI-uqf" firstAttribute="leading" secondItem="Skn-5B-LqF" secondAttribute="leading" id="gUc-EY-g5Y"/>
                                                 <constraint firstItem="qK4-JP-94J" firstAttribute="leading" secondItem="vCl-3c-wSs" secondAttribute="leading" id="h9P-lj-016"/>
                                                 <constraint firstItem="guP-Yp-Amz" firstAttribute="leading" secondItem="qK4-JP-94J" secondAttribute="leading" id="hBx-Og-fK9"/>
-                                                <constraint firstItem="JFv-j7-T43" firstAttribute="top" secondItem="dtC-cI-uqf" secondAttribute="top" id="izT-24-ZsK"/>
+                                                <constraint firstItem="JFv-j7-T43" firstAttribute="top" secondItem="dtC-cI-uqf" secondAttribute="top" constant="4" id="izT-24-ZsK"/>
                                                 <constraint firstItem="bxu-Qx-naR" firstAttribute="top" secondItem="Skn-5B-LqF" secondAttribute="bottom" constant="8" symbolic="YES" id="tJy-mh-YWb"/>
                                                 <constraint firstItem="JFv-j7-T43" firstAttribute="leading" secondItem="F83-d3-yVf" secondAttribute="leading" id="tlt-8h-yHx"/>
                                                 <constraint firstItem="dtC-cI-uqf" firstAttribute="leading" secondItem="JFv-j7-T43" secondAttribute="trailing" constant="8" symbolic="YES" id="ytI-Xn-Vyz"/>
@@ -159,6 +158,7 @@
                         <outlet property="userCountTextField" destination="qvf-cX-EPf" id="YcA-7n-hmv"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="337" y="50"/>
         </scene>
