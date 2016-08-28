@@ -23,7 +23,9 @@ class User: NSManagedObject {
             lastName = nameArray["last"] as? String
             email = jsonDictionary["email"] as? String
             phoneNumber = jsonDictionary["phone"] as? String
-            thumbnailUrlString = pictureUrlArray["thumbnail"] as? String
+            if let thumbnailUrlString = pictureUrlArray["thumbnail"] as? String, thumbnailUrl = NSURL(string: thumbnailUrlString) {
+                thumbnailData = NSData(contentsOfURL: thumbnailUrl)
+            }
                
         } else {
             
@@ -34,8 +36,8 @@ class User: NSManagedObject {
             lastName = nil
             email = jsonDictionary["email"] as? String
             phoneNumber = jsonDictionary["phone"] as? String
-            thumbnailUrlString = nil
+            thumbnailData = nil
         }
     }
+    
 }
-
