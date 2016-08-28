@@ -29,7 +29,7 @@ class User: NSManagedObject {
                
         } else {
             
-            // If we cannot get into the picture array of dictionaries and name array of dictionaries we can still try to set the others but we need to know those are no longer acccessible in the API 
+            // If we cannot get into the picture and or name dictionaries, we can still try to set the other properties but we need to know those dictionaries are no longer acccessible in the API 
             print("API Structure has changed")
             
             firstName = nil

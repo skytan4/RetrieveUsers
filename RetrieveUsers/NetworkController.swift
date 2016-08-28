@@ -37,16 +37,10 @@ class NetworkController {
                 }
 //                print(jsonObject)
                 let usersArray = jsonObject["results"] as? [[String: AnyObject]]
+                
                 if let userObjects = usersArray {
-                    
                     var users: [User] = []
-                    
-                    for userDictionary in userObjects {
-                        
-                        let user = User(jsonDictionary: userDictionary)
-                        users.append(user)
-                        
-                    }
+                    userObjects.forEach { users.append(User(jsonDictionary: $0)) }
                     callback(resultUsers: users, nil)
                 }
 //                print(jsonObject)

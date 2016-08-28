@@ -67,7 +67,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vCl-3c-wSs">
-                                                    <rect key="frame" x="171" y="61" width="37" height="18"/>
+                                                    <rect key="frame" x="171" y="60" width="37" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -81,9 +81,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="JFv-j7-T43" secondAttribute="bottom" constant="-4.5" id="RcY-IP-pfC"/>
                                                 <constraint firstItem="dtC-cI-uqf" firstAttribute="baseline" secondItem="guP-Yp-Amz" secondAttribute="baseline" id="UOl-xE-VGZ"/>
                                                 <constraint firstItem="qK4-JP-94J" firstAttribute="leading" secondItem="Skn-5B-LqF" secondAttribute="trailing" constant="9" id="ZeN-3h-akF"/>
-                                                <constraint firstItem="bxu-Qx-naR" firstAttribute="baseline" secondItem="vCl-3c-wSs" secondAttribute="baseline" constant="-1" id="ZlO-w0-47Q"/>
+                                                <constraint firstItem="bxu-Qx-naR" firstAttribute="baseline" secondItem="vCl-3c-wSs" secondAttribute="baseline" id="ZlO-w0-47Q"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="vCl-3c-wSs" secondAttribute="trailing" constant="8" id="c1Z-RR-R4q"/>
-                                                <constraint firstItem="vCl-3c-wSs" firstAttribute="top" secondItem="qK4-JP-94J" secondAttribute="bottom" constant="12" id="eGQ-Or-Yel"/>
+                                                <constraint firstItem="vCl-3c-wSs" firstAttribute="top" secondItem="qK4-JP-94J" secondAttribute="bottom" constant="11" id="eGQ-Or-Yel"/>
                                                 <constraint firstItem="dtC-cI-uqf" firstAttribute="leading" secondItem="Skn-5B-LqF" secondAttribute="leading" id="gUc-EY-g5Y"/>
                                                 <constraint firstItem="qK4-JP-94J" firstAttribute="leading" secondItem="vCl-3c-wSs" secondAttribute="leading" id="h9P-lj-016"/>
                                                 <constraint firstItem="guP-Yp-Amz" firstAttribute="leading" secondItem="qK4-JP-94J" secondAttribute="leading" id="hBx-Og-fK9"/>

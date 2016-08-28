@@ -74,10 +74,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func doneButtonAction() {
         userCountTextField.resignFirstResponder()
-        if Int(userCountTextField.text!) < 5000 {
+        if Int(userCountTextField.text!) <= 500 {
              getUsers(Int(userCountTextField.text!) ?? 10)
         } else {
-            let alert = UIAlertController(title: "Error", message: "Please enter a number less than 5000", preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Error: Number too large", message: "Please enter a number less than 500", preferredStyle: .Alert)
             alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
             presentViewController(alert, animated: true, completion: nil)
         }

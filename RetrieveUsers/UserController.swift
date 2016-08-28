@@ -15,8 +15,8 @@ class UserController {
         
         let request = NSFetchRequest(entityName: "User")
         
-        if let users = try? Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as! [User] {
-            return users
+        if let users = try? Stack.sharedStack.managedObjectContext.executeFetchRequest(request) as? [User] {
+            return users ?? []
         } else { return [] }
     }
     
@@ -33,9 +33,7 @@ class UserController {
     func deleteUsers(usersToDelete: [User]?) {
         guard let usersToDelete = usersToDelete else { return }
         
-        for user in usersToDelete {
-            Stack.sharedStack.managedObjectContext.deleteObject(user)
-        }
+        usersToDelete.forEach { Stack.sharedStack.managedObjectContext.deleteObject($0) }
     }
     
 }
